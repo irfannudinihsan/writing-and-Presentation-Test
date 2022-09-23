@@ -14,7 +14,7 @@ untuk mengakses CLI bisa menggunakan GIT
 **cara mengakses CLI bagaimana?**
 klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 
-!(/cli.png)
+![cli](/cli.png)
 
 
 ### File System
