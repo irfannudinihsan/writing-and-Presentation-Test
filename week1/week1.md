@@ -76,6 +76,7 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 ##### - **setup GIT**
 
 - setup awal
+
   ![ls](git_github/setup.png)
 
 ##### - **kelola repository GIT**
