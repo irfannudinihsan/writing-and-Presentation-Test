@@ -14,7 +14,7 @@ untuk mengakses CLI bisa menggunakan GIT
 **cara mengakses CLI bagaimana?**
 klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 
-![cli](/cli/cli.png)
+![cli](cli/cli.png)
 
 
 ### File System
@@ -24,7 +24,7 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 - pwd : perintah untuk melihat direktori saat ini
 
 - ls : perintah untuk melihat isi direktori
-![ls](/cli/ls.png)
+![ls](cli/ls.png)
 - cd : perintah untuk pindah direktori
 - mkdir : perintah untuk membuat direktori
 - touch : perintah untuk membuat file
