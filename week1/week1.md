@@ -58,3 +58,35 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 - rm : perintah untuk menghapus file/direktori
 
     ![ls](cli/rm.png)
+
+
+### **GIT & GITHUB**
+**GIT** adalah version control system yang digunakan untuk mengelola sebuah file/diretori dan melakukan pencatatan ketika ada perubahan
+
+**GITHUB** adalah layanan GIT yang digunakan programmer untuk mengelola file yang berbasis cloud dengan cara dihosting dan **GITHUB** juga dapat digunakan untuk kolaborasi.
+
+#### **Kondisi-kondisi di GIT**
+- modified : kondisi sudah ada perubahan tetapi masih untracked atau belum ditandai dan belum disimpan di version control system
+- staged : kondisi kondisi sudah ada perubahan tetapi belum disimpan di version control system
+- comitted : kondisi sudah ada perubahan dan sudah disimpan di version control system
+
+#### **Perintah-perintah di GIT**
+
+##### - **setup GIT**
+* setup awal
+* setup berhasil
+
+##### - **kelola repository GIT**
+* git init : perintah untuk menginisialisasi repository
+* git status : perintah untuk melihat kondisi
+* git add : perintah untuk menambahkan kondisi di staging
+* git commit : perintah untuk menyimpan perubahan di version control system
+* git log : untuk melihat riwayat perubahan
+
+
+
+**Cara kerja GITHUB**
+Programmer melakukan pengelolaan file/direktori di lokal, ketika akan melakukan upload dan bisa diakses secara publik prgrammmer akan melakukan perintah GIT/GITHUB secara CLI maupun GUI untuk upload di platform **GITHUB**
+
+
+
