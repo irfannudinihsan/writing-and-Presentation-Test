@@ -23,15 +23,30 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 **perintah-perintah di Command Line Interface (CLI)**
 - pwd : perintah untuk melihat direktori saat ini
 
+    ![ls](cli/pwd.png)
 - ls : perintah untuk melihat isi direktori
 
-![ls](cli/ls.png)
+    ![ls](cli/ls.png)
 - cd : perintah untuk pindah direktori
+
+
 - mkdir : perintah untuk membuat direktori
+
+    ![ls](cli/mkdir.png)
 - touch : perintah untuk membuat file
+
+  ![ls](cli/touch.png)
 - cat : perintah untuk melihat isi file
+
+      ![ls](cli/cat.png)
 - cp : perintah untuk copy/salin
+
+      ![ls](cli/cp.png)
 - mv : perintah untuk pindah file/direktori
+
+      ![ls](cli/mv.png)
 - rm : perintah untuk menghapus file/direktori
+
+      ![ls](cli/rm.png)
 
 
