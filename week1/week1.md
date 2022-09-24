@@ -110,3 +110,12 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 
 **Cara kerja GITHUB**
 Programmer melakukan pengelolaan file/direktori di lokal, ketika akan melakukan upload dan bisa diakses secara publik prgrammmer akan melakukan perintah GIT/GITHUB secara CLI maupun GUI untuk upload di platform **GITHUB**
+
+##### - **cara upload dit GITHUB**
+1. buat repository baru di github
+2. hubungkan repository local dengan repository github
+
+![ls](git_github/remote.png)
+3. upload file/direktori di local ke repository github
+
+![ls](git_github/push.png)
