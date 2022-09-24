@@ -61,7 +61,7 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 
 
 ### **GIT & GITHUB**
-**GIT** adalah version control system yang digunakan untuk mengelola sebuah file/diretori dan melakukan pencatatan ketika ada perubahan
+**GIT** adalah version control system yang digunakan untuk mengelola sebuah file/direktori dan melakukan pencatatan ketika ada perubahan
 
 **GITHUB** adalah layanan GIT yang digunakan programmer untuk mengelola file yang berbasis cloud dengan cara dihosting dan **GITHUB** juga dapat digunakan untuk kolaborasi.
 
