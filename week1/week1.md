@@ -24,7 +24,7 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 - pwd : perintah untuk melihat direktori saat ini
 
 - ls : perintah untuk melihat isi direktori
-![ls](/cli/cli.png)
+![ls] (/cli/ls.png)
 - cd : perintah untuk pindah direktori
 - mkdir : perintah untuk membuat direktori
 - touch : perintah untuk membuat file
