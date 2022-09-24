@@ -116,6 +116,8 @@ Programmer melakukan pengelolaan file/direktori di lokal, ketika akan melakukan 
 2. hubungkan repository local dengan repository github
 
 ![ls](git_github/remote.png)
+
+
 3. upload file/direktori di local ke repository github
 
 ![ls](git_github/push.png)
