@@ -1,6 +1,6 @@
 # Writing-and-Presentation-Test week 1
 
-## #Day 1 : Unix Command Line 
+## #Day 1 : Unix Command Line dan GIT & GITHUB
 **Senin, 19 September 2022**
 
 
@@ -22,14 +22,15 @@ klik kanan logo windows > klik run > lalu ketikan cmd > klik ok
 
 **perintah-perintah di Command Line Interface (CLI)**
 - pwd : perintah untuk melihat direktori saat ini
+
 - ls : perintah untuk melihat isi direktori
+![ls] (/ls.png)
 - cd : perintah untuk pindah direktori
 - mkdir : perintah untuk membuat direktori
 - touch : perintah untuk membuat file
 - cat : perintah untuk melihat isi file
 - cp : perintah untuk copy/salin
-- mv = perintah untuk pindah file/direktori
+- mv : perintah untuk pindah file/direktori
 - rm : perintah untuk menghapus file/direktori
-- 
 
 
