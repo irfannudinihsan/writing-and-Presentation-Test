@@ -202,3 +202,58 @@ lalu bagaimana cara menjalankan **HTML**? untuk menjalankannya harus menggunakan
     </html>
     ``` 
 
+## Day 3 : CSS 
+**Rabu, 21 September 2022**
+### **Cascading Style Sheet (CSS)**
+#### Cascading Style Sheet (CSS) : bahasa styling yang digunakan untuk memberikan warna,bentuk,font dan lainnya pada website.
+
+##### **cara menggunakan/menyisipkan CSS**
+- inline : menyisipkan di tag html
+- internal : menyisipkan di dalam file html tepatnya pada head html
+- external : menggunakan file lain dengan cara menyisipkan link yang mengarah css file
+
+##### **Struktur CSS**
+CSS memiliki bebrapa struktur untuk dapat memberi styling pada HTML
+- selector : fungsi yang digunakan memilih tag html untuk diberikan styling
+- property : fungsi apa yang diterapkan pada tag html
+- value : isi dari yang di berikan pada tag html
+
+    ``` 
+      h1 {
+    color : red;
+    }
+    ```
+##### **CSS class name & id name**
+- class name : sebagai penanda secara global untuk akses css
+    ``` 
+      <h1 class="heading">nama : Irfannudin Ihsan</h1>
+    ``` 
+
+- id name : sebagai penanda secara khusus untuk akses css
+    ``` 
+    <p id="paragraf">paragraf</p>
+    ``` 
+**contoh penerapan menggunakan CSS**
+screenshot
+
+##### **Multiple CSS**
+cara menuliskan banyak selector dalam satu penulisan
+``` 
+h1, p, .heading {
+    color : red;
+    }
+``` 
+
+##### **Flexbox**
+Flexbox adalah cara yang digunakan CSS untuk mengatur CSS layouting atau tata letak.
+Flexbox mempunyai beberapa komponent yaiatu container dan items
+- container : component yang membungkus atau menampung didalamnya
+- items : component yang mewakili suatu konten yang ada didalamnya
+
+##### **Flex-Direction**
+Flex Direction adalah mengatur arah dari  items
+- row : mengatur arah items secara horizontal
+- row-reverse mengatur arah items dengan uruatan terbalik secara horizontal
+- column : mengatur arah items secara vertikal
+- column : mengatur arah items dengan urutan terbaik secara vertikal
+
