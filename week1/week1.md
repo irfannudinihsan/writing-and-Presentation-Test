@@ -139,9 +139,11 @@ Anatomy HTML : susunan terurut dari HTML contohnya element, tag, content
 
 ##### **Element HTML**
 Element adalah komponen yang menyusun dokumen HTML yang terdiri dari opening tag, content, closing tag.
+ ``` 
 - <p> paragraf </p> : tag paragraf
 - <h1> heading </h1> : tag heading
 - <img> : tag image
+ ``` 
 
 ##### **Atribute HTML**
 Atribute adalah tambahan styling untuk element HTML
