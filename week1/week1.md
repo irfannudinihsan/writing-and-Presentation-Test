@@ -257,7 +257,7 @@ Flex Direction adalah mengatur arah dari  items
 - column : mengatur arah items secara vertikal
 - column : mengatur arah items dengan urutan terbaik secara vertikal
 
-## Day 3 : Algoritma 
+## Day 4 : Algoritma 
 **Kamis, 22 September 2022**
 ### **Algoritma**
 #### Algoritma : langkah-langkah meneyelesaikan masalah secara logis dan sistematis.
