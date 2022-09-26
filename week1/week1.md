@@ -303,3 +303,54 @@ mencari angka genap dari 0 sampai 20
         }
     }
 ``` 
+
+## Day 5 : JavaScript
+**Kamis, 22 September 2022**
+### **JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif**
+
+
+##### **cara menjalankan JavaScript**
+Ada dua cara menyisipkan JavaScript agar berjalan
+- Penulisan Internal : JavaScript di tulis didalam file dan cara penulisannya <script> </script>
+- penulisan Eksternal : JavaScript ditulisan diluar file dan cara aksesnya menggunakan link
+
+##### **Tipe data di JavaScript**
+Tipe data di Javascript string,number,boolean, object
+```
+let nama = "irfan";
+let umur = 21;
+let sudahMakan = true;
+let data = {
+    nama : "irfan",
+    umur : 21,
+    sudahMakan : true,
+}
+```
+##### **Operator di JavaScript**
+Operator di JavaScript yaitu penambahan, pengurangan, perkalian, Pembagian, Eksponen (pangkat), Modulus
+```
+let tambah = 3 + 3;
+let kurang = 3 - 3;
+let bagi = 6 - 3;
+let eksponen = 3 ** 3;
+let modulus = 9 % 3;
+```
+##### **Conditional di JavaScript**
+Contional dengan if
+
+```
+nilai = 6;
+if(nilai > 70) {
+    console.log('lulus')
+} else {
+    console.log('tidak lulus')
+}
+```
+
+##### **Looping di JavaScript**
+for loop
+```
+for (angka = 1; angka <= 20; angka++) {
+    console.log(angka)
+}
+```
