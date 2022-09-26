@@ -257,3 +257,49 @@ Flex Direction adalah mengatur arah dari  items
 - column : mengatur arah items secara vertikal
 - column : mengatur arah items dengan urutan terbaik secara vertikal
 
+## Day 3 : Algoritma 
+**Kamis, 22 September 2022**
+### **Algoritma**
+#### Algoritma : langkah-langkah meneyelesaikan masalah secara logis dan sistematis.
+
+##### **Manfaat Algoritma**
+Manfaat dari algoritma yaitu membantu dalam menyelesaikan masalah dengan secara terurut dan menjadi podasi membuah sistem dengan bahasa pemrograman 
+
+
+##### **ciri-ciri Algoritma**
+- input : sebuah variabel yang berisi nilai untuk proses sistem
+- output : keluaran nilai yang di proses sistem
+- Definiteness : Instruksi yang jelas untuk proses
+- Finiteness : merupakan titik berhenti untuk proses
+- Effectiveness : proses yang tepat yang efisien
+
+##### **Jenis Proses Algoritma**
+- Sequence : Intruksi yang berjalan secara terurut
+- Selection Intruksi yang dijalankan untuk menyelesaikan kondisi tertentu
+- Iteration : Intruksi yang berjalan berulang ketika kondisi memenuhi
+- Concurrent : Instruksi yang berjalan secara bersamaan
+
+##### **Penyajian Algoritma**
+- Deskriptif : Penulisan algoritma secara deskriptif atau dengan cara menjabarkan dengan bahasa sehari-hari
+- Flowchart : Penulisan algoritma dengan diagram alur dengan setiap proses diwakili dengan simbol-simbol
+- Pseudocode : Penulisan algoritma seperti penulisan bahasa pemrograman tetapi dengan bahasa yang mudah dipahami
+
+##### **Contoh Algoritma**
+**Pseudecode**
+Mencari angka genap
+deklarasi
+angka = 0
+angka < 20
+deskripsi
+    if angka % 2 == 0
+end
+
+##### **Contoh penerapan algoritma dengan cara JavaScript**
+mencari angka genap dari 0 sampai 20
+``` 
+    for (angka = 0; angka < 20; angka++) {
+    if(angka % 2 == 0) {
+        console.log(` ini bilangan genap : ${angka}`)
+        }
+    }
+``` 
