@@ -62,3 +62,6 @@
   git merge dev
   ```
 - **Pull Request (perintah untuk meminta menambahkan repo dari lokal ke repository)**
+  ```
+  git pull origin dev
+  ```
