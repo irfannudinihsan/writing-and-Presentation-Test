@@ -175,7 +175,7 @@
 ![breakpoint1](breakpoint1.png)
 ![breakpoint2](breakpoint2.png)
 
-    ```
+  ```
     <div class="container text-center">
       <div class="row">
         <div class="col-sm-8">col-sm-8</div>
@@ -187,4 +187,4 @@
         <div class="col-sm">col-sm</div>
       </div>
     </div>
-    ```
+  ```
