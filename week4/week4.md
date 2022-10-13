@@ -172,8 +172,8 @@
     
  - **Grid Option adalah grid system yang mengatur ukuran dengan breakpoint dengan aturan dari Bootstrap**
 
-![breakpoint1](/breakpoint1.png)
-![breakpoint2](/breakpoint2.png)
+![breakpoint1](breakpoint1.png)
+![breakpoint2](breakpoint2.png)
 
     ```
     <div class="container text-center">
