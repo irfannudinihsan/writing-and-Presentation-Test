@@ -49,3 +49,78 @@
    - skilvulstore.com/customers/223/orders/12 
    - Macam - macam response codes : - 200 (OK) - 201 (CREATED) - 204 (NO CONTENT) - 400 (BAD REQUEST) - 403 (FORBIDDEN) - 404 (NOT FOUND) - 500 (INTERNAL SERVER ERROR) Response codes sesuai HTTP verb : - GET - 200 (OK) - POST - 201 (CREATED) - PUT - 200 (OK) - DELETE - 204 (NO CONTENT)
 
+
+## Day 2 : Intro Node.Js
+**Selasa, 25 Oktober 2022**
+
+#### **Intro Node.Js**
+- **Node.Js** adalah sebuah runtime JavaScript yang berjalan pada V8. Node.Js bisa bejalan sebagai backend atau server side.
+
+- **Fitur Node.js**
+  - file system
+  - http/https
+  - Read Evak Print Loop
+  - Console
+
+- **Install Node.Js**  
+    https://nodejs.org/en/
+
+- **Build In Module Node.js**
+    -  console
+        ```
+        console.log("Hello world");
+         ```
+         
+    -  Process
+         ```
+        require("dotenv").config();
+        process.env.TOKEN_KEY = 'kf-token'
+        console.log(process.env.CLIENT_URL)
+         ```
+         
+    -  OS
+         ```
+        const os = require('os')
+        console.log(os.version())
+        console.log(os.release())
+        console.log(os.networkInterfaces())
+         ```
+         
+    - Util
+         ```
+        const os = require('os')
+        console.log(os.version())
+        console.log(os.release())
+        console.log(os.networkInterfaces())
+        ```
+        
+    - Event
+         ```
+        const EventEmitter = require("events");
+        const event = new EventEmitter();
+        event.on("connected", (params) => {
+          console.log("user connect", params.username);
+        });
+        event.emit("connected", {
+          username: "irfan",
+        });
+        ```
+        
+    - fs
+         ```
+        const fs = require("fs");
+        fs.readFile("process.js", (err, data) => {
+          console.log(data.toString());
+        });
+        ```
+
+- **Web Server dengan Node.js**    
+  ```
+    const http = require("http");
+    http.createServer((req, res) => {
+        res.write("haii");
+        res.end();
+      }).listen(8000, () => {
+        console.log("http://localhost:8000");
+      });
+    ```
