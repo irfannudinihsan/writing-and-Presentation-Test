@@ -124,3 +124,168 @@
         console.log("http://localhost:8000");
       });
     ```
+
+## Day 3 : Express JS
+**Rabu, 26 Oktober 2022**
+
+#### **Express JS**
+- **Express Js** package Node JS yang dapat membuat aplikasi web dan membuat HTTP REST API.
+
+- **Installasi**
+    ```
+    npm init
+    npm install express
+    
+    - nodemon
+        npm install nodemon
+    ```
+
+- **Routes adalah sebuah jalur endpoint yang dapat diakses menggunakan URL website**
+     ```
+    app.get('/', (req, res) => {
+        res.send('Hello World')
+    })
+    ```
+- **Method adalah sebuah perilaku terhadap data ke server**
+    - POST
+    - PUT
+    - PATCH
+    - DELETE
+    
+- **Query adalah parameter yang digunakan untuk menspesifikasi router**
+    ```
+    https://localhost:3000/hello/irfan/21
+    ```
+
+#### **Middleware** 
+- **Middleware** adalah fungsi untuk mengakses ke object request(req), response(res),next dalam request-response cycle.
+
+- **Middleware : memodifikasi Object Request dan Object Response**
+    ```
+    const express = require('express')
+    const app = express()
+    const addRequestTime = function (req, res, next) => {
+        req.requestTime = Date.now()
+        next()
+    }
+    app.use(addRequestTime)
+    app.get('/', function (req, res) {
+        let responseText = 'Hello World<br>'
+        responseText += '<small>Requested at: ' + req.requestTime + '</small>'
+        res.send(responseText)
+    })
+    app.listen(3000)
+    ```
+- **Middleware : menghentikan Request-Response cycle **
+    ```
+    const express = require('express')
+    const app = express()
+    const stopHere = function (req, res, next) => {
+        res.send("<p>request stop from middleware</p>")
+    }
+    app.use(stopHere)
+    app.get('/', function (req, res) {
+        let responseText = 'Hello Skilvul!'
+        res.send(responseText)
+    })
+    app.listen(3000)
+    ```
+- **cara penggunaaan**
+    - Application Level Middleware
+        ```
+        const addRequestTime = funtion (req, res, next) {
+        req.requestTime = Date.now()
+        next()
+        }
+        app.user(addRequestTime)
+        ```
+    - Router Level Middleware
+        ```
+        const express = require('express')
+        const UserRouter = express.Router()
+        const AdminRouter = express.Router()
+        const logUserAction = function(req, res, next) {
+        const username = req.body.username
+        console.log(`username ${username} access the API`)
+        next()
+        }
+        userRouter.use(logUserAction)
+        UserRouter.get('/users', function(req, res) {
+        res.send('all user data')
+        })
+        AdminRouter.get('/admins', function(req, res) {
+            res.send('all admin data')
+        })
+        ```
+        
+        - Application Level Middleware
+        ```
+        const express = require('express')
+        const app = express()
+
+        const errorHandling = function(err, req, res, next) {
+          console.error(err.stack)
+        res.status(500).send('Something broke')
+        }
+
+        app.use(errorHandling)
+        ```
+## Day 4 & 5 : Design Database
+**Kamis & JUmat, 27 & 28 Oktober 2022**
+
+#### **Design Database dengan MySQL**
+- **MySQL** adalah manajemen database relasional (RDBMS) berbasis SQL.
+
+- **Entity** adalah sebuah tempat yang mengidentifikasi sebuah data.
+    - User
+    - Film
+    - Genre
+    
+- **Atribute** adalah karakteristik dari sebuah object data.
+
+    ```
+    User
+    id int NOT NULL
+    name varchar(255)
+    email varchar(255)
+    password varchar(255)
+    
+    Film
+    id int NOT NULL
+    name varchar(255)
+    release_date date
+    
+    Genre
+    id int NOT NULL
+    name varchar(255)
+    ```
+- **Relasi** adalah hubungan antar tabel.
+        - User & Film (Many to Many)
+        - Film & Genre (Many to Many)
+        - 
+        ```
+        User
+        id int NOT NULL
+        name varchar(255)
+        email varchar(255)
+        password varchar(255)
+        
+        UserFilmFavorite
+        id int NOT NULL
+        userId int
+        filmId int
+
+        Film
+        id int NOT NULL
+        name varchar(255)
+        release_date date
+        
+        FilmGenre
+        id int NOT NULL
+        filmId int
+        genreId int
+        
+        Genre
+        id int NOT NULL
+        name varchar(255)
+        ```
