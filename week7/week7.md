@@ -62,3 +62,82 @@
         ``
         delete from movie where id = 1;
         ``
+        
+## Day 2 : MySQL Lanjutan
+**Selasa, 1 November 2022**
+#### **MySQL Lanjutan**
+- **Relation di SQL** 
+    - One to One : satu baris di tabel hanya dapat berhubungan dengan satu baris di tabel kedua.
+    - One to Many : satu baris di tabel  dapat berhubungan dengan beberapa baris.
+    - Many to Many : satu baris dapat berhubungan dengan beberapa baris dan baris yang berhubungan itu dapat berhubungan dengan baris lainnya.
+
+- **Database Normalization**
+    - **Database Normalization** adalah teknik analisis data yang mengorganisir atribut dengan mengelompokan sehingga terbentuk entitas yang non-redundant, stabil, flexsible.
+    - **Bentuk Data Normalization**
+        - First Normal Form (1NF)
+            - setiap kolom bernilai tunggal
+            - setiap kolom memiliki nama unik
+            - ada primary key
+        - Second Normal Form (2NF)
+            - menggunkan 1NF
+            -  tidak ada partial depedency(atribute yg tidak ada hubungan dengan primary key dipisah)
+        - Third Normal Form (3NF)
+            - menggunkan 1NF,2NF
+            -  tidak ada transitif depedency (tidak ada atibute pada atribute lain, selain primary key)
+
+    - **Primary Key adalah** nilai dalam data yang digunakan untuk mengidentifikasi suatu baris pada tabel.
+     ``
+        create table category (
+        id int primary key not null auto_increment,
+        nama varchar(25)
+        );
+    ``
+    - **Primary Key adalah** nilai dalam data yang digunakan untuk menciptakan hubungan (relasi) antar tabel.
+        ``
+        create table product (
+        id int primary key not null auto_increment,
+        name varchar(50),
+        price int,
+        category_id int,
+        foreign key (category_id) REFERENCES category(id));
+        ``
+    - **Join Multiple Table** adalah mengambil data dari dua atau lebih tabel yang memiliki relasi dan akan disajikan dalam single result set.
+        - Inner Join
+        ``
+        select product.id, product.name, product.price, category.name
+        from product inner join category
+        on product.category_id = category.id;
+        ``
+        - Left Join
+        ``
+        select product.id, product.name, product.price, category.name
+        from product left join category
+        on product.category_id = category.id;
+        ``
+        - Right Join
+        ``
+        select product.id, product.name, product.price, category.name
+        from product Right join category
+        on product.category_id = category.id;
+        ``
+        - **Agrgregate Functions** adalah mengambi satu nilai setelah melakukan perhitungan pada sekumpulan nilai.
+        - Max
+        ``
+        select name, max(price) from product;
+        ``
+         - Min
+        ``
+        select name, min(price) from product;
+        ``
+         - Sum
+        ``
+        select name, sum(price) from product;
+        ``
+         - Count
+        ``
+        select count(name) from product;
+        ``
+         - Price
+        ``
+        select avg(price) from product;
+        ``
