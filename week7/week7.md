@@ -170,3 +170,32 @@
           base64UrlEncode(payload),
         )   
         ``
+## Day 5 : Sequelize
+**Jumat, 5 November 2022**
+#### **Sequelize**
+- **Sequelize** adalah ORM (Object Relational Mapping) Node JS yang berbasis promise.
+- **ORM (Object Relational Mapping)** adalah metode yang digunakan untuk mengkonversi data lingkungan bahasa pemrograman berorientasi objek (OOP) dengan lingkungan database relational
+- **Installasi Sequelize**
+``
+npm install --save sequelize
+//install drive
+npm install --save mysql2
+// install sequelize cli 
+npm i -g sequelize-cli
+``
+- **init sequelize in local project**
+``
+npx sequelize-cli init
+``
+- **Generate Model**
+``
+npx sequelize-cli model:generate --name Todo --attributes title:string,description:string,startTime:date,status:string
+``
+    - migrate
+        ``
+        npx-sequelize-cli db:migrate
+        ``
+    - Seed
+        ``
+        npx sequelize-cli seed:generate --name demo-todo
+        ``
