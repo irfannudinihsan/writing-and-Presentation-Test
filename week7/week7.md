@@ -141,3 +141,32 @@
         ``
         select avg(price) from product;
         ``
+        
+## Day 3 : Aunthetication & Authorization
+**Rabu, 2 November 2022**
+#### **Aunthetication & Authorization**
+- **Aunthetication** adalah proses mengidentifikasi user untuk diberikan akses sesuai haknya.
+- **Authorization** adalah proses menentukan hak akses untuk user dalam mengambil akses ke dalam sistem.
+- **JSON Web Token (JWT)** adalah JSON Object yang mewakili sebuah informasi untuk aktifitas transfer.
+    - Token terdiri dari
+        - header
+        ``
+        {
+          "alg": "HS256",
+          "typ": "JWT"
+        }
+        ``
+        - Payload
+        ``
+        {
+            "id": 1,
+            "email": "irfan@gmail.com"
+        }   
+        ``
+        - Signature
+        ``
+         HMACSHA256(
+          base64UrlEncode(header) + "." +
+          base64UrlEncode(payload),
+        )   
+        ``
