@@ -1,6 +1,6 @@
 # Writing-and-Presentation-Test week 8
 
-## Day 1 : MySQL Basic
+## Day 1 : Sequelize
 
 **Senin, 7 November 2022**
 
